@@ -221,7 +221,32 @@ form {
 }
 .forms-toggle {
   .border {
-    min-height: 600px;
+    position: relative;
+    min-height: 100%;
+
+    &[aria-expanded="true"] {
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        margin-left: -10px;
+        border: 20px solid transparent;
+        border-bottom-color: $white;
+
+        @include media-breakpoint-down(sm) {
+          border: 15px solid transparent;
+          border-bottom-color: $white;
+          margin-left: -7.5px;
+        }
+      }
+    }
+
+    &.pink {
+      &:after {
+        border-bottom-color: #fff3ee;
+      }
+    }
   }
 }
 .form-left,
@@ -230,27 +255,6 @@ form {
   padding-top: 70px;
   padding-bottom: 50px;
   margin-bottom: -100px;
-  &:before {
-    content: '';
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 25%;
-    margin-left: -20px;
-    top: -10px;
-    background: $white;
-    transform: rotate(45deg);
-    @include media-breakpoint-up(sm) {
-      top: -20px;
-    }
-  }
-}
-.form-right {
-  &:before {
-    left: auto;
-    right: 25%;
-    margin-right: -20px;
-  }
 }
 [type="submit"] {
   width: 120px;
@@ -312,11 +316,6 @@ form {
 
 .bg-alt {
   background: #fff3ee !important;
-  .form-right {
-    &:before {
-      background: #fff3ee;
-    }
-  }
   .form-control {
     background: $white;
     border-color: $white;
@@ -425,6 +424,8 @@ form {
     overflow: hidden;
     overflow-x: auto;
     max-width: 100%;
+    padding-left: $gutter / 2;
+    padding-right: $gutter / 2;
   }
   .forms-toggle {
     min-width: 580px;
@@ -444,19 +445,6 @@ form {
   .form-right {
     padding-top: 30px;
     padding-bottom: 30px;
-    &:before {
-      display: none;
-      width: 20px;
-      height: 20px;
-      //top: -10px;
-      left: 43%;
-    }
-  }
-  .form-right {
-    &:before {
-      left: auto;
-      right: 52%;
-    }
   }
   .form-control {
     font-size: 16px;
@@ -493,5 +481,13 @@ form {
     position: absolute;
     top: -40px;
     right: 10px;
+  }
+}
+.container {
+  &.xs-fluid {
+    @include media-breakpoint-down(sm) {
+      padding: 0 !important;
+      overflow: hidden;
+    }
   }
 }
