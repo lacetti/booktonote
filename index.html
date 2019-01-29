@@ -26,24 +26,23 @@
 
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
   <div class="container">
-
-    <a class="navbar-brand">
+    <a class="navbar-brand" href="index.html">
       <img src="assets/img/booktonote/logo.svg" height="30" class="d-none d-md-inline-block align-top" alt="">
       <img src="assets/img/booktonote/logo.svg" height="30" class="d-md-none align-top" alt="" data-toggle="collapse" data-target="#navbarNav">
     </a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">about us</a>
+          <a class="nav-link" href="index.html">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#how">How it works</a>
+          <a class="nav-link" href="index.html#how">How it works</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#price">pricing</a>
+          <a class="nav-link" href="index.html#price">Pricing</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">CONTACT US</a>
+          <a class="nav-link" href="contact.html">Contact us</a>
         </li>
       </ul>
     </div>
@@ -92,11 +91,11 @@
             specific knowledge from <br class="d-none d-lg-block">
             booktonote users.
           </h2>
-          <a href="#form1" class="btn btn-outline-light mb-2 mr-1 mr-md-2">
-            <span data-toggle="collapse" data-target="#form1">Request Demo</span>
+          <a href="#request-demo" class="btn btn-outline-light mb-2 mr-1 mr-md-2">
+            <span data-toggle="collapse" data-target="#request-demo">Request Demo</span>
           </a>
-          <a href="#form2" class="btn btn-outline-light mb-2">
-            <span data-toggle="collapse" data-target="#form2">online trial</span>
+          <a href="#purchase" class="btn btn-outline-light mb-2">
+            <span data-toggle="collapse" data-target="#purchase">Purchase</span>
           </a>
         </div>
       </div>
@@ -112,7 +111,7 @@
         <div class="card">
           <div class="card-header" id="headingOne">
             <h2 class="mb-0">
-              <a class="align-items-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <a class="collapsed align-items-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <span class="rounded-circle">01</span>
                 <br class="d-block d-lg-none"/>
                 <span>Upload trial balance</span>
@@ -120,9 +119,10 @@
             </h2>
           </div>
 
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-              Your accounts will be auto-mapped to save your time. Just quickly review mapping to make sure it's good to go.
+              Start with uploading your trial balance. <br/>
+              It will automatically set up most of your forms and disclosures.
             </div>
           </div>
         </div>
@@ -139,7 +139,8 @@
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
-              Your accounts will be auto-mapped to save your time. Just quickly review mapping to make sure it's good to go.
+              Your accounts will be auto-mapped to save your time. <br/>
+              Just quickly review mapping to make sure it’s good to go.
             </div>
           </div>
         </div>
@@ -156,7 +157,8 @@
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-              Your accounts will be auto-mapped to save your time. Just quickly review mapping to make sure it's good to go.
+              Go through our intelligent and interactive questionnaire. <br/>
+              See your financials being created live based on your answers.
             </div>
           </div>
         </div>
@@ -173,14 +175,15 @@
           </div>
           <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-              Your accounts will be auto-mapped to save your time. Just quickly review mapping to make sure it's good to go.
+              All forms. All disclosures. All numbers and wording. <br/>
+              Your entire financial statements are now ready to download.
             </div>
           </div>
         </div>
       </div>
 
-      <a href="#form1" class="btn btn-outline-light">
-        <span data-toggle="collapse" data-target="#form1">Request Demo</span>
+      <a href="#request-demo" class="btn btn-outline-light">
+        <span data-toggle="collapse" data-target="#request-demo">Request Demo</span>
       </a>
     </div>
   </div>
@@ -206,7 +209,7 @@
               <div class="row">
 
                 <div class="col-6">
-                  <div class="border d-flex align-items-center text-center" data-toggle="collapse" data-target="#form1">
+                  <div class="border d-flex align-items-center text-center" data-toggle="collapse" data-target="#request-demo">
                     <div class="w-100 py-2 py-lg-5 px-3">
                       <img src="assets/img/booktonote/yellow_sc.svg" alt="" class="mb-2 mb-md-4">
                       <h3 class="text-white font-weight-normal">
@@ -219,7 +222,7 @@
                 </div>
 
                 <div class="col-6">
-                  <div class="border d-flex align-items-center text-center" data-toggle="collapse" data-target="#form2">
+                  <div class="border d-flex align-items-center text-center" data-toggle="collapse" data-target="#purchase">
                     <div class="w-100 py-2 py-lg-5 px-3">
                       <img src="assets/img/booktonote/mute_cir.svg" alt="" class="mb-2 mb-md-4">
                       <h3 class="text-white font-weight-normal">
@@ -240,7 +243,7 @@
     </div>
     <div class="forms bg-white">
       <div class="container">
-        <form id="form1" data-parent="#price" class="form-left collapse" >
+        <form id="request-demo" data-parent="#price" class="form-left collapse" >
 
           <div class="form-group row">
             <div class="col-md-6">
@@ -319,7 +322,7 @@
 
     <div class="forms bg-alt">
       <div class="container">
-        <form id="form2" data-parent="#price" class="form-right collapse" >
+        <form id="purchase" data-parent="#price" class="form-right collapse" >
 
           <div class="form-group row">
             <div class="col-md-6">
@@ -388,26 +391,19 @@
   </div>
 </main>
 
-
 <footer class="footer">
   <div class="container">
-
     <div class="row justify-content-between">
-
       <div class="col-12 col-md-auto order-last order-md-first">
-        <span>©2019 BOOKTONOTE, Inc. All rights reserved.</span>
+        <span>©2019 BOOKTONOTE, LLC. All rights reserved.</span>
       </div>
-
       <div class="col-12 col-md-auto order-first order-md-last">
         <ul class="nav">
           <li class="nav-item"><a href="terms.html" class="nav-link">Terms of Use</a></li>
           <li class="nav-item"><a href="privacy.html" class="nav-link">Privacy policy</a></li>
-          <li class="nav-item"><a href="help.html" class="nav-link">Get Help</a></li>
         </ul>
       </div>
-
     </div>
-
   </div>
 </footer>
 

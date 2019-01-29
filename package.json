@@ -1,0 +1,25 @@
+{
+  "name": "booktonote-landing",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-scss": "node-sass --source-map-embed --output-style compressed ./assets/scss/main.scss ./assets/css/main.min.css",
+    "watch-scss": "node-sass --watch --source-map-embed --output-style compressed ./assets/scss/main.scss ./assets/css/main.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phamap/booktonote.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phamap/booktonote/issues"
+  },
+  "homepage": "https://github.com/phamap/booktonote#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1"
+  }
+}
