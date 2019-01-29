@@ -26,8 +26,10 @@
 
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="assets/img/booktonote/logo.svg" height="30" class="d-none d-md-inline-block align-top" alt="">
+    <a class="navbar-brand d-none d-md-block" href="index.html">
+      <img src="assets/img/booktonote/logo.svg" height="30" class="align-top" alt="">
+    </a>
+    <a class="navbar-brand d-md-none">
       <img src="assets/img/booktonote/logo.svg" height="30" class="d-md-none align-top" alt="" data-toggle="collapse"
            data-target="#navbarNav">
     </a>
@@ -196,10 +198,12 @@
   <div class="container">
     <div class="b-video">
       <img src="assets/img/booktonote/play.svg" alt="" class="pointer">
+      <div class="price-anchor-holder" id="price"></div>
     </div>
   </div>
 
-  <div class="h-screen bg-primary text-white video-pt pb-100" id="price">
+  <div class="h-screen bg-primary text-white pb-100">
+    <div class="video-pt"></div>
     <div class="container">
       <div class="row">
         <div class="col">

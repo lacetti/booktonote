@@ -244,7 +244,7 @@ form {
 
     &.pink {
       &:after {
-        border-bottom-color: #fff3ee;
+        border-bottom-colorg: #fff3ee;
       }
     }
   }
@@ -490,4 +490,11 @@ form {
       overflow: hidden;
     }
   }
+}
+.price-anchor-holder {
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 69px;
 }
