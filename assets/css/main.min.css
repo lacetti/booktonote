@@ -10312,11 +10312,12 @@ h3, .h3 {
 }
 
 .accordion .card:not(:last-child) {
-  border-bottom: 1px solid #fff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, .2) !important;
 }
 
 .accordion .card-header {
   background: transparent;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 0;
   padding-right: 0;
@@ -10338,8 +10339,12 @@ h3, .h3 {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .accordion .card-header [data-toggle="collapse"] > span {
+  .accordion .card-header [data-toggle="collapse"] > span:first-child {
     margin-right: 40px;
+  }
+  .accordion .card-header [data-toggle="collapse"] > span:last-child {
+    font-size: 90px;
+    line-height: 90px;
   }
 }
 
@@ -10350,7 +10355,8 @@ h3, .h3 {
   height: 18px;
   display: inline-block;
   position: absolute;
-  top: 65%;
+  top: 50%;
+  margin-bottom: -9px;
   -webkit-transform: translateY(-50%) rotate(180deg);
       -ms-transform: translateY(-50%) rotate(180deg);
           transform: translateY(-50%) rotate(180deg);
@@ -10383,9 +10389,9 @@ h3, .h3 {
   color: #86D19F;
   font-family: "Libre Baskerville", serif;
   font-size: 30px;
-  height: 80px;
-  width: 80px;
-  line-height: 80px;
+  height: 90px;
+  width: 90px;
+  line-height: 90px;
   text-align: center;
   vertical-align: bottom;
 }
