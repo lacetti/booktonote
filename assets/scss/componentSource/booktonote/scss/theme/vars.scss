@@ -1,0 +1,84 @@
+$font-family-base: 'Sofia Pro', sans-serif;
+$headings-font-family: 'Sofia Pro', sans-serif;
+$font-alt: 'Libre Baskerville', serif;
+
+$green: #86D19F;
+$yellow: #F4BA00;
+$hero-bg: #ECECED;
+$info: #EFCCBD;
+
+$body-color: #1F2B84;
+$body-bg: #f8f8f8;
+$light-gray: #E5E5E5;
+$headings-color: $body-color;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1440px
+);
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+$h1-font-size: 5rem;
+$h2-font-size: $h1-font-size;
+$h3-font-size: 2rem;
+/*
+$h4-font-size
+$h5-font-size
+$h6-font-size
+*/
+$headings-line-height: 90px;
+
+$navbar-light-active-color:$body-color;
+$navbar-nav-link-padding-x:1rem;
+
+$primary: $body-color;
+$success: $green;
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+);
+
+$navbar-light-color: $primary;
+$navbar-light-active-color: $success;
+
+$card-border-width: 0;
+$card-border-radius: 4px;
+
+$btn-border-radius: 30px;
+$btn-padding-y: 9px;
+$btn-padding-x: 30px;
+$btn-border-width: 2px;
+
+$spacer:1.67rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .75),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 4)
+);
+
+$input-bg: #ECECED;
+$input-border-color: $input-bg;
+$input-padding-y: 1.7rem;
+$input-padding-x: 1.7rem;
+$input-color: $primary;
+$input-placeholder-color: $input-color;
+
+$border-radius: 20px;
+$border-color: #000;
+
+$video-height: 610px;
+
+
+$transition-collapse: height 0s ease;
